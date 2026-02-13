@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  test:
+    build: .
+    environment:
+      - BASE_URL=${BASE_URL:-https://your-demo-site.com}
+      - USER_EMAIL=${USER_EMAIL}
+      - USER_PASSWORD=${USER_PASSWORD}
